@@ -1,0 +1,38 @@
+{
+  "aritmetika": [
+    {
+      "tekst": "Izračunaj: 3/4 + 1/2",
+      "resenje": "5/4"
+    }
+  ],
+  "algebra": [
+    {
+      "tekst": "Uprosti: (x + 2)(x - 2)",
+      "resenje": "x^2 - 4"
+    }
+  ],
+  "geometrija": [
+    {
+      "tekst": "Obim kruga za r = 3",
+      "resenje": "O = 2π·3 = 6π"
+    }
+  ],
+  "funkcije": [
+    {
+      "tekst": "Za y = 2x + 1 nađi y za x = 3",
+      "resenje": "y = 7"
+    }
+  ],
+  "trigonometrija": [
+    {
+      "tekst": "Ako su katete 3 i 4, izračunaj sin(α) i cos(α)",
+      "resenje": "hip=5, sin=3/5, cos=4/5"
+    }
+  ],
+  "kombinatorika": [
+    {
+      "tekst": "Izračunaj broj kombinacija C(5,2)",
+      "resenje": "10"
+    }
+  ]
+}

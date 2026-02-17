@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="sr">
+<head>
+<link href="assets/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="assets/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/favicon/favicon.ico" rel="shortcut icon"/>
+<link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets/favicon/site.webmanifest" rel="manifest"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Trigonometrija</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+<img alt="Logo" class="brand-logo" src="assets/logo.png"/>
+<span data-i18n="siteTitle">Elementarna matematika</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+  <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="navHome">Početna</a></li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navLessons">
+      Oblasti
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="aritmetika.html" data-i18n="navArit">Aritmetika</a></li>
+      <li><a class="dropdown-item" href="algebra.html" data-i18n="navAlg">Algebra</a></li>
+      <li><a class="dropdown-item" href="geometrija.html" data-i18n="navGeo">Geometrija</a></li>
+      <li><a class="dropdown-item" href="funkcije.html" data-i18n="navFun">Funkcije</a></li>
+      <li><a class="dropdown-item" href="trigonometrija.html" data-i18n="navTrig">Trigonometrija</a></li>
+      <li><a class="dropdown-item" href="kombinatorika.html" data-i18n="navKomb">Kombinatorika</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item"><a class="nav-link" href="kontakt.html" data-i18n="navKontakt">Kontakt</a></li>
+  <li class="nav-item"><a class="nav-link" href="login.html" data-i18n="navLogin">Prijava</a></li>
+
+  <li class="nav-item ms-lg-3">
+    <button class="btn btn-outline-light btn-sm" id="langBtn" type="button">EN</button>
+  </li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="container main-wrap">
+<h1 class="mb-4 fade-in">Trigonometrija</h1>
+<section class="fade-in">
+<p>
+      Trigonometrija pravouglog trougla definiše odnose između oštrih uglova i dužina stranica (kateta i hipotenuze)
+      kroz četiri osnovne funkcije: sinus (sin), kosinus (cos), tangens (tg) i kotangens (ctg).
+      One su ključne za izračunavanje nepoznatih elemenata trougla, a zasnivaju se na odnosima naspramnih i naleglih
+      kateta prema hipotenuzi.
+    </p>
+<img alt="Trigonometrija u pravouglom trouglu" class="section-image section-image-lg" src="assets/img/trigonometrija.png"/>
+</section>
+<section class="fade-in">
+<h2 data-i18n="trig_calc_title">Kalkulator: sin, cos, tg i ctg na osnovu kateta.</h2>
+<p class="text-muted" data-i18n="trig_calc_hint">Unesi dužine kateta (suprotna i priležna) i izračunaj vrednosti.</p>
+<div class="calc-box">
+<div class="row g-2 align-items-end">
+<div class="col-6 col-md-3">
+<label class="form-label" data-i18n="lbl_opp">Suprotna kateta</label>
+<input class="form-control" id="opp" step="0.01" type="number"/>
+</div>
+<div class="col-6 col-md-3">
+<label class="form-label" data-i18n="lbl_adj">Priležna kateta</label>
+<input class="form-control" id="adj" step="0.01" type="number"/>
+</div>
+<div class="col-12 col-md-3">
+<button class="btn btn-primary w-100" data-i18n="btn_calc" onclick="trigRightTriangle()">Izračunaj</button>
+</div>
+</div>
+<div class="mt-2">
+<span class="text-muted" data-i18n="lbl_result">Rezultat:</span> <span id="trigResult"></span>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-3 mt-5">
+  <div class="container text-center">
+    <small><strong>Silma Talević</strong> • Državni univerzitet u Novom Pazaru • <span id="year"></span></small>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calculators.js"></script>
+<script src="js/fetch_data.js"></script>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

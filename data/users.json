@@ -1,0 +1,10 @@
+[
+  {
+    "username": "student",
+    "password_sha256": "0ea1c0c0485964aab124a4a83cca10c7965825a1bcb3d350c2c11ed604803e9b"
+  },
+  {
+    "username": "demo",
+    "password_sha256": "0ead2060b65992dca4769af601a1b3a35ef38cfad2c2c465bb160ea764157c5d"
+  }
+]
