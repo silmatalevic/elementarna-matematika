@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fullName.addEventListener("focus", () => nameHelp.textContent = L("Unesite ime i prezime (najmanje 2 reči).", "Enter first and last name (at least 2 words)."));
   fullName.addEventListener("blur",  () => nameHelp.textContent = "");
 
-  email.addEventListener("focus", () => emailHelp.textContent = L("Primer: ime@domen.com", "Example: name@domain.com"));
   email.addEventListener("blur",  () => emailHelp.textContent = "");
 
   message.addEventListener("focus", () => msgHelp.textContent = L("Poruka treba da ima bar 10 karaktera.", "Message should be at least 10 characters."));
