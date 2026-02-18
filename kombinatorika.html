@@ -54,7 +54,7 @@
 <main class="container main-wrap">
 <h1 class="mb-4 fade-in">Kombinatorika</h1>
 <section class="fade-in">
-<p>
+<p class="text-justify">
       Predmet kombinatorike je raspoređivanje elemenata u konačnim skupovima i određivanje broja takvih raporeda.
       Koreni kombinatorike leže u drevnoj prošlosti, u vremenu početka matematike i nauke uopšte. Tokom istorije,
       razvijala se sa drugim oblastima matematike. Bliže proučavanje je počelo u XVII veku kada su se kombinatorna pitanja
@@ -68,74 +68,74 @@
 <li><strong>Faktorijel:</strong> \(n! = n\cdot(n-1)\cdot\dots\cdot 1\)</li>
 <li><strong>Binomni koeficijent:</strong> \(C(n,k)=\dfrac{n!}{k!\,(n-k)!}\)</li>
 </ol>
-<p><strong>Neke osobine binomnog koeficijenta:</strong></p>
+<p class="text-justify"><strong>Neke osobine binomnog koeficijenta:</strong></p>
 <ul>
 <li>\(C(n,0) = C(n,n) = 1\)</li>
 <li>\(C(n,1) = C(n,n-1) = n\)</li>
 <li>\(C(n,k) = C(n,n-k)\)</li>
 </ul>
-<p>
+<p class="text-justify">
       Pri rešavanju kombinatornih zadataka gotovo uvek se sreću osnovne kombinatorne konfiguracije kao sto su permutacije, varijacije i kombinacije.
     </p>
 </section>
 <section class="fade-in">
 <h2>Permutacije bez ponavljanja</h2>
-<p>
+<p class="text-justify">
       Permutacija bez ponavljanja skupa A koji ima n elemenata je svaki niz u kome se tačno po jadanput pojavljuju svi elementi skupa A.
       Broj takvih permutacija iznosi \(P(n)=n!\)
     </p>
-<p><strong>Primer:</strong> Na koliko načina 4 osobe mogu stati u red?</p>
-<p><strong>Rešenje:</strong></p>
+<p class="text-justify"><strong>Primer:</strong> Na koliko načina 4 osobe mogu stati u red?</p>
+<p class="text-justify"><strong>Rešenje:</strong></p>
 <p class="text-center my-2">\[4! = 4\cdot 3\cdot 2\cdot 1 = 24\]</p>
 </section>
 <section class="fade-in">
 <h2>Permutacije sa ponavljanjem</h2>
-<p>
+<p class="text-justify">
       Neka je dat skup od m elemenata A=(a1, a2, …, am). Svaki niz dužine n=k1+k2+…+km u kome se element a1 pojavljuje tačno k1 puta,
       element a2 tačno k2 puta itd. se naziva permutacija sa ponavljanjem tipa k1, k2, … km i njihov broje je:
     </p>
 <p class="text-center my-2">\(P = \frac{n!}{k_1!\,k_2!\cdots k_m!}\)</p>
-<p><strong>Primer:</strong> Koliko se različitih šestocifrenih brojeva može sastaviti od cifara 1,2,2,2,3,3?</p>
-<p><strong>Rešenje:</strong></p>
+<p class="text-justify"><strong>Primer:</strong> Koliko se različitih šestocifrenih brojeva može sastaviti od cifara 1,2,2,2,3,3?</p>
+<p class="text-justify"><strong>Rešenje:</strong></p>
 <p class="text-center my-2">\[n=6,\ k_1=1,\ k_2=3,\ k_3=2,\quad P=\frac{6!}{1!\,3!\,2!}\]</p>
 </section>
 <section class="fade-in">
 <h2>Varijacije bez ponavljanja</h2>
-<p>
+<p class="text-justify">
       Varijacija bez ponavljanja k-te klase skupa A od n elemenata je svaki niz k međusobrno različitih elemenata i broj takvih nizova iznosi:
     </p>
 <p class="text-center my-2">\(V(n,k) = \frac{n!}{(n-k)!}\)</p>
-<p><strong>Primer:</strong> Koliko ima trocifrenih brojeva od cifara 1-9 tako da su sve cifre različite?</p>
-<p><strong>Rešenje:</strong></p>
+<p class="text-justify"><strong>Primer:</strong> Koliko ima trocifrenih brojeva od cifara 1-9 tako da su sve cifre različite?</p>
+<p class="text-justify"><strong>Rešenje:</strong></p>
 <p class="text-center my-2">\[n=9,\ k=3,\quad V(9,3)=9\cdot 8\cdot 7=504\]</p>
 </section>
 <section class="fade-in">
 <h2>Varijacije sa ponavljanjem</h2>
-<p>
+<p class="text-justify">
       Varijacije k-te klase skupa A od n elemenata pri čemu se elementi mogu ponavljati nazivaju se varijacije sa ponavljanjem i važi:
     </p>
 <p class="text-center my-2">\(V_p(n,k) = n^k\)</p>
-<p><strong>Primer:</strong> Koliko ima trocifrenih brojeva od cifara 1-9 ako se cifre mogu ponavljati?</p>
-<p><strong>Rešenje:</strong></p>
+<p class="text-justify"><strong>Primer:</strong> Koliko ima trocifrenih brojeva od cifara 1-9 ako se cifre mogu ponavljati?</p>
+<p class="text-justify"><strong>Rešenje:</strong></p>
 <p class="text-center my-2">\[n=9,\ k=3,\quad V_p(9,3)=9^3=729\]</p>
 </section>
 <section class="fade-in">
 <h2>Kombinacije bez ponavljanja</h2>
-<p>Kombinacija bez ponavljanja k-te klase skupa A koji ima n elemenata je svaki k-točlani podskup skupa A i iznosi:</p>
+<p class="text-justify">Kombinacija bez ponavljanja k-te klase skupa A koji ima n elemenata je svaki k-točlani podskup skupa A i iznosi:</p>
 <p class="text-center my-2">\(C(n,k) = \frac{n!}{k!(n-k)!}\)</p>
-<p><strong>Primer:</strong> U kutiji je 7 lopti. Na koliko načina možemo izabrati 4 lopte?</p>
-<p><strong>Rešenje:</strong></p>
+<p class="text-justify"><strong>Primer:</strong> U kutiji je 7 lopti. Na koliko načina možemo izabrati 4 lopte?</p>
+<p class="text-justify"><strong>Rešenje:</strong></p>
 <p class="text-center my-2">\[C(7,4)=35\]</p>
 </section>
 <section class="fade-in">
 <h2>Kombinacije sa ponavljanjem</h2>
-<p>
+<p class="text-justify">
       Ako se iz n-točlanog kupa A bira jedan po jedan element sa vraćanjem, i tako k puta, i ako nije bitan redosled,
       već samo koji element je i koliko puta izabran onda se rezultat izbora naziva kombinacija k-te klase sa n elemenata sa ponavljanjem i iznosi:
     </p>
 <p class="text-center my-2">\(C_p(n,k) = C(n+k-1, k)\)</p>
-<p><strong>Primer:</strong> Na koliko načina turista od 10 razglednica može kupiti 3?</p>
-<p><strong>Rešenje:</strong></p>
+<p class="text-justify"><strong>Primer:</strong> Na koliko načina turista od 10 razglednica može kupiti 3?</p>
+<p class="text-justify"><strong>Rešenje:</strong></p>
 <p class="text-center my-2">\[C_p(10,3)=C(12,3)=220\]</p>
 </section>
 <section class="fade-in">

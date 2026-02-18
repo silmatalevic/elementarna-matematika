@@ -239,3 +239,30 @@ p, li{ font-size: 1rem; }
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
+
+/* Index oblasti titles */
+#index-oblasti .card-title{ font-weight: 700; }
+
+/* Profesionalnije poravnanje teksta */
+.text-justify{ text-align: justify; }
+
+
+/* Mobile layout improvements */
+@media (max-width: 576px){
+  .main-wrap{ padding-left: .75rem; padding-right: .75rem; }
+  .paper{ padding: 1rem; margin-top: 1rem; border-radius: 18px; background:#fff; }
+}
+
+/* Uvodni tekst – poravnanje */
+.intro-text p{
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Uvod na početnoj – poravnanje (tačno ciljani pasusi) */
+p[data-i18n="homeIntro"], 
+p[data-i18n="homeIntro1"]{
+  text-align: justify;
+  line-height: 1.6;
+}
