@@ -306,3 +306,13 @@ p[data-i18n="homeIntro1"]{
 .paper{
   hyphens: auto;
 }
+
+
+/* Global text alignment (main content) */
+.paper p,
+.paper li,
+main p,
+main li{
+  text-align: justify;
+  line-height: 1.6;
+}
