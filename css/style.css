@@ -267,81 +267,31 @@ p[data-i18n="homeIntro1"]{
   line-height: 1.6;
 }
 
-/* Mobile navbar improvements */
-.navbar .navbar-collapse{
-  justify-content: flex-end;
-}
-.navbar .navbar-nav{
-  align-items: flex-end;
-}
-.navbar .lang-switch{
-  margin-left: 0.75rem;
-}
-@media (max-width: 576px){
-  .navbar .navbar-brand{
-    max-width: 70%;
-  }
-  .navbar .navbar-collapse{
-    text-align: right;
-  }
-  .navbar .navbar-nav{
-    width: 100%;
-    padding-top: .5rem;
-    align-items: flex-end;
-  }
-  .navbar .lang-switch{
-    margin-left: 0;
-    margin-top: .25rem;
-  }
-}
-
-/* Global text alignment (main content) */
+/* Global justify (content only) */
 .paper p,
 .paper li{
   text-align: justify;
   line-height: 1.6;
 }
 
-/* Better justification on mobile (when supported) */
-.paper{
-  hyphens: auto;
+/* No-justify helper (use for math lists like Skupovi brojeva) */
+.no-justify,
+.no-justify p,
+.no-justify li{
+  text-align: left !important;
 }
 
-
-/* Global text alignment (main content) */
-.paper p,
-.paper li,
+/* Global justify (main content) */
 main p,
 main li{
   text-align: justify;
   line-height: 1.6;
 }
 
-/* Nicer mobile navbar */
-@media (max-width: 576px){
-  .navbar{
-    padding-top: .35rem;
-    padding-bottom: .35rem;
-  }
-  .navbar-brand img{
-    height: 32px;
-    width: auto;
-  }
-  .navbar-collapse{
-    background: rgba(255, 255, 255, 0.96);
-    padding: .75rem 1rem;
-    border-radius: 14px;
-    margin-top: .5rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  }
-  .navbar-nav .nav-link{
-    padding: .55rem 0;
-    font-size: 1.05rem;
-  }
-  .navbar-nav .dropdown-menu{
-    border-radius: 12px;
-  }
-  .navbar .lang-switch{
-    align-self: flex-end;
-  }
+/* Don't justify navbar/footer text */
+.navbar p,
+.navbar li,
+footer p,
+footer li{
+  text-align: inherit;
 }
