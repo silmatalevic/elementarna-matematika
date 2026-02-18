@@ -266,3 +266,43 @@ p[data-i18n="homeIntro1"]{
   text-align: justify;
   line-height: 1.6;
 }
+
+/* Mobile navbar improvements */
+.navbar .navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar .navbar-nav{
+  align-items: flex-end;
+}
+.navbar .lang-switch{
+  margin-left: 0.75rem;
+}
+@media (max-width: 576px){
+  .navbar .navbar-brand{
+    max-width: 70%;
+  }
+  .navbar .navbar-collapse{
+    text-align: right;
+  }
+  .navbar .navbar-nav{
+    width: 100%;
+    padding-top: .5rem;
+    align-items: flex-end;
+  }
+  .navbar .lang-switch{
+    margin-left: 0;
+    margin-top: .25rem;
+  }
+}
+
+/* Global text alignment (main content) */
+.paper p,
+.paper li{
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Better justification on mobile (when supported) */
+.paper{
+  hyphens: auto;
+}
