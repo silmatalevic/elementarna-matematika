@@ -316,3 +316,32 @@ main li{
   text-align: justify;
   line-height: 1.6;
 }
+
+/* Nicer mobile navbar */
+@media (max-width: 576px){
+  .navbar{
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+  }
+  .navbar-brand img{
+    height: 32px;
+    width: auto;
+  }
+  .navbar-collapse{
+    background: rgba(255, 255, 255, 0.96);
+    padding: .75rem 1rem;
+    border-radius: 14px;
+    margin-top: .5rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  }
+  .navbar-nav .nav-link{
+    padding: .55rem 0;
+    font-size: 1.05rem;
+  }
+  .navbar-nav .dropdown-menu{
+    border-radius: 12px;
+  }
+  .navbar .lang-switch{
+    align-self: flex-end;
+  }
+}
