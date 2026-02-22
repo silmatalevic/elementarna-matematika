@@ -1,5 +1,5 @@
 // =========================================================
-// i18n.js - SR/EN prevod (jednostavno, studentski)
+// i18n.js - SR/EN prevod 
 // Radi i kad se stranica otvara lokalno (file://) i preko servera.
 // Prevodi elemente koji imaju data-i18n="KEY".
 // Ako KEY ne postoji u rečniku, tekst ostaje kako jeste.

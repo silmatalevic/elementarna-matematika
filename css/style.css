@@ -14,14 +14,14 @@
   --paper: rgba(255,255,255,0.94);
   --border: rgba(0,0,0,0.10);
   --shadow: rgba(0,0,0,0.08);
-  --accent:#0d6efd;        /* bootstrap primary */
+  --accent:#0d6efd;        /* bootstrap primarni */
 }
 
 /* <= 12pt tekst (12pt ~ 16px) */
 html{ font-size:16px; }
 
 body{
-  padding-top: 78px; /* fixed navbar space */
+  padding-top: 78px; 
   font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
 
@@ -32,7 +32,7 @@ body{
   background-size: 40px 40px; /* sitniji kvadratići */
 }
 
-/* ---------------- Navbar ---------------- */
+/*  Navbar */
 .navbar-custom{
   background: var(--nav) !important;
 }
@@ -49,7 +49,7 @@ body{
   text-underline-offset: 6px;
 }
 
-/* ---------------- Glavni sadržaj ---------------- */
+/*  Glavni sadržaj  */
 .main-wrap{
   background: var(--paper);
   border: 1px solid var(--border);
@@ -114,7 +114,7 @@ footer{
   border-top: 1px solid var(--border);
 }
 
-/* ---------------- Fade-in animacije ---------------- */
+/*  Fade-in animacije */
 .fade-in{
   opacity: 0;
   transform: translateY(14px);
@@ -146,7 +146,7 @@ footer{
 .quiz-option{cursor:pointer;}
 
 
-/* Mali box za kalkulatore i kviz (jednostavno, studentski) */
+/* Mali box za kalkulatore i kviz */
 .calc-box{
   background: rgba(255,255,255,0.9);
   border: 1px solid rgba(0,0,0,0.08);
@@ -158,7 +158,7 @@ footer{
 
 
 
-/* Ujednačena veličina slika u sekcijama (da ne budu prevelike) */
+/* Ujednačena veličina slika u sekcijama */
 .section-image{
   max-width: 360px;
   width: 100%;
@@ -172,7 +172,7 @@ footer{
 .math-line{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background: rgba(0,0,0,0.03); padding: .4rem .6rem; border-radius: .5rem; display: inline-block; }
 
 
-/* Vece slike tamo gde treba (bez menjanja ostatka stila) */
+/*Ujednačena veličina slika tamo gde treba  */
 .section-image-md{
   max-width: 520px;
   width: 100%;
@@ -194,7 +194,7 @@ body{ font-size: 1rem; }
 p, li{ font-size: 1rem; }
 
 
-/* Lepši dropdown za "Oblasti" */
+/* dropdown za "Oblasti" */
 .dropdown-menu{
   border-radius: 14px;
   border: 1px solid var(--border);
@@ -213,7 +213,7 @@ p, li{ font-size: 1rem; }
   margin-left: 8px;
 }
 
-/* Smanjenje visine navigacije (bez smanjenja loga) */
+/* Smanjenje visine navigacije */
 .navbar-custom .navbar-brand{
   padding-top: 4px;
   padding-bottom: 4px;
@@ -244,7 +244,7 @@ p, li{ font-size: 1rem; }
 /* Index oblasti titles */
 #index-oblasti .card-title{ font-weight: 700; }
 
-/* Profesionalnije poravnanje teksta */
+/* poravnanje teksta */
 .text-justify{ text-align: justify; }
 
 
@@ -254,41 +254,41 @@ p, li{ font-size: 1rem; }
   .paper{ padding: 1rem; margin-top: 1rem; border-radius: 18px; background:#fff; }
 }
 
-/* Uvodni tekst – poravnanje */
+/* poravnanje */
 .intro-text p{
   text-align: justify;
   line-height: 1.6;
 }
 
-/* Uvod na početnoj – poravnanje (tačno ciljani pasusi) */
+/* Uvod na početnoj – poravnanje */
 p[data-i18n="homeIntro"], 
 p[data-i18n="homeIntro1"]{
   text-align: justify;
   line-height: 1.6;
 }
 
-/* Global justify (content only) */
+/* sredjivanje poravnanja teksta */
 .paper p,
 .paper li{
   text-align: justify;
   line-height: 1.6;
 }
 
-/* No-justify helper (use for math lists like Skupovi brojeva) */
+/* izostavljanje poravnanja u navodjenju */
 .no-justify,
 .no-justify p,
 .no-justify li{
   text-align: left !important;
 }
 
-/* Global justify (main content) */
+/* poravnanje opet*/
 main p,
 main li{
   text-align: justify;
   line-height: 1.6;
 }
 
-/* Don't justify navbar/footer text */
+/* sredjivanje poravnanja teksta u footer-u */
 .navbar p,
 .navbar li,
 footer p,

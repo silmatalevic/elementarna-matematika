@@ -1,9 +1,5 @@
-// ==============================
-// calculators.js (ARITMETIKA)
-// ==============================
 
-
-// Pomoć: trenutno izabrani jezik
+// trenutno izabrani jezik
 function isEN(){
   return (document.documentElement.lang || 'sr') === 'en';
 }
@@ -11,7 +7,7 @@ function L(sr, en){
   return isEN() ? en : sr;
 }
 
-// Kalkulator procenta: p% od broja N
+// Kalkulator ARITMETIKA, procenta: p% od broja N
 function calculatePercent() {
     const percent = document.getElementById("percent").value;
     const number = document.getElementById("number").value;
@@ -87,10 +83,6 @@ function addFractions() {
 }
 
 
-// =========================================================
-// DODATO: ostali kalkulatori (geometrija, funkcije, trig, komb)
-// =========================================================
-
 // GEOMETRIJA: obim i površina kruga
 function circleCalc(){
   const r = parseFloat(document.getElementById("radius").value);
@@ -104,10 +96,6 @@ function circleCalc(){
   out.textContent = `${L("Obim", "Circumference")} ≈ ${O.toFixed(3)}, ${L("Površina", "Area")} ≈ ${P.toFixed(3)}`;
 }
 
-
-// ==============================
-// GEOMETRIJA: kalkulatori
-// ==============================
 
 // Treći ugao trougla (A + B + C = 180)
 function calcThirdAngle(){
@@ -168,7 +156,7 @@ function polyValue(){
   out.textContent = `P(${x}) = ${y}`;
 }
 
-// FUNKCIJE: tabela vrednosti i graf (linearna funkcija y = kx + n)
+// FUNKCIJE: tabela vrednosti i grafik (linearna funkcija y = kx + n)
 function buildTableAndGraph(){
   const k = parseFloat(document.getElementById("k").value);
   const n = parseFloat(document.getElementById("n").value);
@@ -295,7 +283,7 @@ function nCr(){
 }
 
 
-/* ---------------- MINI KVIZ (ARITMETIKA) ---------------- */
+/* MINI KVIZ (ARITMETIKA)  */
 
 const quizState = { answered: {}, score: 0 };
 
