@@ -283,7 +283,7 @@ function nCr(){
 }
 
 
-/* MINI KVIZ (ARITMETIKA)  */
+/* KVIZ (ARITMETIKA)  */
 
 const quizState = { answered: {}, score: 0 };
 

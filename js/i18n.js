@@ -26,7 +26,7 @@ const DICT = {
     contactMsgLabel: "Poruka",
     contactSendBtn: "Pošalji",
 
-    // Login / Welcome
+    // prijava / dobrodošli
     loginTitle: "Prijava",
     loginHeading: "Prijava",
     loginNote: "Podaci za prijavu se čitaju iz JSON fajla i lozinka se proverava kao SHA-256 hash (front-end demonstracija).",
@@ -40,7 +40,7 @@ const DICT = {
     logoutBtn: "Odjavi se",
     backHomeBtn: "Nazad na početnu",
 
-    // Početna (ako postoji)
+    // Početna 
     homeIntro: "Ovaj sajt sadrži kratak pregled oblasti elementarne matematike, uz primere i jednostavne interaktivne kalkulatore koji pomažu pri vežbanju osnovnih matematičkih pojmova.",
     siteTitle: "Elementarna matematika"
   },
@@ -79,7 +79,7 @@ const DICT = {
     logoutBtn: "Log out",
     backHomeBtn: "Back to home",
 
-    // Home (if exists)
+    // Home 
     homeIntro: "This website provides a short overview of elementary mathematics topics, with examples and simple interactive calculators that help practice basic mathematical concepts.",
     siteTitle: "Elementary Mathematics"
   }
@@ -103,7 +103,7 @@ function translatePage(lang){
     }
   });
 
-  // Button label toggles to the OTHER language (common UX)
+  // oznaka dugmeta za prebacivanje na drugi jezik
   const btn = document.getElementById("langBtn");
   if (btn){
     btn.textContent = (lang === "sr") ? "EN" : "SR";
@@ -111,13 +111,13 @@ function translatePage(lang){
 }
 
 function initI18n(){
-  // Apply saved language (default SR)
+  // primeni sačuvani jezik (podrazmevani SR)
   const saved = safeGetLang() || "sr";
   translatePage(saved);
 
   const btn = document.getElementById("langBtn");
   if (btn){
-    // avoid double-binding
+    // odvij dvostruko vezivanje
     if (!btn.dataset.bound){
       btn.dataset.bound = "1";
       btn.addEventListener("click", () => {
@@ -130,7 +130,7 @@ function initI18n(){
   }
 }
 
-// Robust init: works whether DOM is loading or already ready
+
 if (document.readyState === "loading"){
   document.addEventListener("DOMContentLoaded", initI18n);
 } else {
